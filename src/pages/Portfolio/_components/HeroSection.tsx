@@ -1,0 +1,67 @@
+import { usePortfolioStore } from "@/store/portfolioStore";
+import { scrollToSection } from "@/utils/utils";
+
+const HeroSection = () => {
+  const { setMobileMenuOpen } = usePortfolioStore();
+
+  return (
+    <section
+      id="home"
+      className="min-h-screen bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center text-white"
+    >
+      <div className="text-center px-6 animate-fade-in">
+        <div className="mb-6">
+          <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-4xl font-bold">
+            QH
+          </div>
+        </div>
+        <h1 className="text-5xl md:text-7xl font-bold mb-4">QAISER HABIB</h1>
+        <div className="text-xl md:text-2xl mb-6">MERN Stack Developer</div>
+        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
+          MERN Stack Developer with 2+ years of experience creating responsive
+          and dynamic web applications
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            onClick={() => scrollToSection("projects", setMobileMenuOpen)}
+            className="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+          >
+            View My Work
+          </button>
+          <button
+            onClick={() => scrollToSection("contact", setMobileMenuOpen)}
+            className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition-colors"
+          >
+            Get In Touch
+          </button>
+        </div>
+        <div className="mt-12 flex justify-center space-x-6">
+          <a
+            href="mailto:qaiserhabib6@gmail.com"
+            className="text-2xl hover:scale-110 transition-transform"
+          >
+            <i className="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/qaisar-habib-827075203/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl hover:scale-110 transition-transform"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://wa.me/923022630092"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl hover:scale-110 transition-transform"
+          >
+            <i className="fas fa-phone"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
