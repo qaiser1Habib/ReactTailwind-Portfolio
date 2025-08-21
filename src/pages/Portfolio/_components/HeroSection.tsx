@@ -12,7 +12,7 @@ const HeroSection = ({ totalExperience }: HeroSectionProps) => {
   return (
     <section
       id="home"
-      className="min-h-screen bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center text-white sm:mt-6"
+      className="min-h-screen bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center text-white mt-16 sm:mt-0"
     >
       <div className="text-center px-6 animate-fade-in">
         <div className="mb-6">
