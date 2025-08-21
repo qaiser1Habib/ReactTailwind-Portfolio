@@ -24,7 +24,7 @@ const Header = () => {
                 onClick={() =>
                   scrollToSection(item.toLowerCase(), setMobileMenuOpen)
                 }
-                className="hover:text-blue-600 transition-colors"
+                className="hover:text-blue-600 transition-colors cursor-pointer"
               >
                 {item}
               </button>

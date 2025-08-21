@@ -21,6 +21,14 @@ const Footer = () => {
               <i className="fas fa-envelope" />
             </a>
             <a
+              href="https://github.com/qaiser1Habib"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl hover:scale-110 transition-transform"
+            >
+              <i className="fa-brands fa-github"></i>
+            </a>
+            <a
               href="https://www.linkedin.com/in/qaisar-habib-827075203/"
               target="_blank"
               className="text-2xl hover:text-blue-400 transition-colors"

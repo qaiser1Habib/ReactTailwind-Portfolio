@@ -35,13 +35,13 @@ const HeroSection = ({ totalExperience }: HeroSectionProps) => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={() => scrollToSection("projects", setMobileMenuOpen)}
-            className="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+            className="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors cursor-pointer"
           >
             View My Work
           </button>
           <button
             onClick={() => scrollToSection("contact", setMobileMenuOpen)}
-            className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition-colors"
+            className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition-colors cursor-pointer"
           >
             Get In Touch
           </button>
@@ -52,6 +52,14 @@ const HeroSection = ({ totalExperience }: HeroSectionProps) => {
             className="text-2xl hover:scale-110 transition-transform"
           >
             <i className="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://github.com/qaiser1Habib"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl hover:scale-110 transition-transform"
+          >
+            <i className="fa-brands fa-github"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/qaisar-habib-827075203/"
