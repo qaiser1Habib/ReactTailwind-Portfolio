@@ -1,14 +1,18 @@
 import { usePortfolioStore } from "@/store/portfolioStore";
 import { scrollToSection } from "@/utils/utils";
 import profile from "@/assets/images/profile.png";
+import type { Experience } from "@/types/Experience";
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  totalExperience: Experience;
+}
+
+const HeroSection = ({ totalExperience }: HeroSectionProps) => {
   const { setMobileMenuOpen } = usePortfolioStore();
-
   return (
     <section
       id="home"
-      className="min-h-screen bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center text-white"
+      className="min-h-screen bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center text-white sm:mt-6"
     >
       <div className="text-center px-6 animate-fade-in">
         <div className="mb-6">
@@ -23,8 +27,10 @@ const HeroSection = () => {
         <h1 className="text-5xl md:text-7xl font-bold mb-4">QAISER HABIB</h1>
         <div className="text-xl md:text-2xl mb-6">MERN Stack Developer</div>
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
-          MERN Stack Developer with 2+ years of experience creating responsive
-          and dynamic web applications
+          MERN Stack Developer with{" "}
+          {`${totalExperience.years}${totalExperience.months > 0 ? "+" : ""}`}{" "}
+          years of experience. Turning illustration into working prototype using
+          React.js Node.js
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button

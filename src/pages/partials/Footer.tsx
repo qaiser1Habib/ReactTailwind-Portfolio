@@ -29,6 +29,7 @@ const Footer = () => {
             </a>
             <a
               href="https://wa.me/923022630092"
+              target="_blank"
               className="text-2xl hover:text-blue-400 transition-colors"
             >
               <i className="fas fa-phone" />

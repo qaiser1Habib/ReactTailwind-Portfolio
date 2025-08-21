@@ -7,7 +7,6 @@ const ExperienceSection = () => {
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
         </div>
         <div className="space-y-8">
-          {/* Current Role */}
           <div className="bg-white p-8 rounded-xl shadow-lg hover:transform hover:-translate-y-2 transition-all duration-300">
             <div className="flex flex-col md:flex-row justify-between items-start mb-4">
               <div>
@@ -44,7 +43,6 @@ const ExperienceSection = () => {
             </ul>
           </div>
 
-          {/* Previous Role */}
           <div className="bg-white p-8 rounded-xl shadow-lg hover:transform hover:-translate-y-2 transition-all duration-300">
             <div className="flex flex-col md:flex-row justify-between items-start mb-4">
               <div>
@@ -78,7 +76,6 @@ const ExperienceSection = () => {
             </ul>
           </div>
 
-          {/* Internship */}
           <div className="bg-white p-8 rounded-xl shadow-lg hover:transform hover:-translate-y-2 transition-all duration-300">
             <div className="flex flex-col md:flex-row justify-between items-start mb-4">
               <div>
@@ -88,7 +85,7 @@ const ExperienceSection = () => {
                 <p className="text-blue-600 font-medium">SoftRobo (LAHORE)</p>
               </div>
               <div className="text-gray-500 mt-2 md:mt-0">
-                February 2021 - January 2022
+                September 2022 - February 2023
               </div>
             </div>
             <ul className="text-gray-600 space-y-2">

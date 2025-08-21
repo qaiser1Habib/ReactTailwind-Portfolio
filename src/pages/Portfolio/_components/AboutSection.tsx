@@ -1,4 +1,10 @@
-const AboutSection = () => {
+import type { Experience } from "@/types/Experience";
+
+interface AboutSectionProps {
+  totalExperience: Experience;
+}
+
+const AboutSection = ({ totalExperience }: AboutSectionProps) => {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6">
@@ -12,8 +18,9 @@ const AboutSection = () => {
               MERN Stack Developer & Frontend Specialist
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              I'm a passionate Full Stack Developer with two plus years of
-              hands-on experience in the MERN stack. My expertise lies in
+              I'm a passionate Full Stack Developer with{" "}
+              {`${totalExperience.years} years, ${totalExperience.months} months`}{" "}
+              of hands-on experience in the MERN stack. My expertise lies in
               creating responsive, user friendly web applications with a strong
               focus on frontend development.
             </p>
@@ -25,7 +32,11 @@ const AboutSection = () => {
             </p>
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div className="text-center p-4 bg-gray-50 rounded-lg">
-                <div className="text-3xl font-bold text-blue-600">2+</div>
+                <div className="text-3xl font-bold text-blue-600">
+                  {`${totalExperience.years}${
+                    totalExperience.months > 0 ? "+" : ""
+                  }`}
+                </div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
               <div className="text-center p-4 bg-gray-50 rounded-lg">
