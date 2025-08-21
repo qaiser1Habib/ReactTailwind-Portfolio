@@ -1,5 +1,6 @@
 import { usePortfolioStore } from "@/store/portfolioStore";
 import { scrollToSection } from "@/utils/utils";
+import profile from "@/assets/images/profile.png";
 
 const HeroSection = () => {
   const { setMobileMenuOpen } = usePortfolioStore();
@@ -11,8 +12,12 @@ const HeroSection = () => {
     >
       <div className="text-center px-6 animate-fade-in">
         <div className="mb-6">
-          <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-4xl font-bold">
-            QH
+          <div className="size-32 mx-auto mb-6 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-4xl font-bold">
+            <img
+              src={profile}
+              className="size-30 object-cover rounded-full"
+              alt="Qaiser Habib"
+            />
           </div>
         </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-4">QAISER HABIB</h1>

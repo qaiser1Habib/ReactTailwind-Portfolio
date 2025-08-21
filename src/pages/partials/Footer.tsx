@@ -1,4 +1,7 @@
 const Footer = () => {
+  const date = new Date();
+  const year = date.getFullYear();
+  const currentYear = year.toString();
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-6xl mx-auto px-6">
@@ -7,7 +10,7 @@ const Footer = () => {
             QH
           </div>
           <p className="text-gray-400 mb-6">
-            Full Stack Developer passionate about creating amazing web
+            MERN Stack Developer passionate about creating amazing web
             experiences
           </p>
           <div className="flex justify-center space-x-6 mb-8">
@@ -33,8 +36,8 @@ const Footer = () => {
           </div>
           <div className="border-t border-gray-800 pt-8">
             <p className="text-gray-400">
-              © 2025 Qaiser Habib. All rights reserved. Built with passion and
-              modern web technologies.
+              © {currentYear} Qaiser Habib. All rights reserved. Built with
+              passion and modern web technologies.
             </p>
           </div>
         </div>
