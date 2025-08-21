@@ -1,0 +1,41 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+package-lock.json
+
+# macOS system file
+.DS_Store
+
+# Vite output
+dist/
+dist-ssr/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.production
+.env.production.local
+.env.development.local
+.env.test.local
+
+# Cypress output (optional)
+cypress/videos/
+cypress/screenshots/
+
+# Editor folders and files
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Husky internal folder
+.husky/_/
