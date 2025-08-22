@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 type ContactFormData = {
   name: string;
@@ -15,23 +16,28 @@ const ContactSection = () => {
     formState: { errors },
   } = useForm<ContactFormData>();
 
-  const onSubmit = (data: ContactFormData) => {
-    const { name, email, subject, message } = data;
+  const onSubmit = async (data: ContactFormData) => {
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_SERVICE_ID, //YOUR EMAILJS SERVICE_ID
+        import.meta.env.VITE_TEMPLATE_ID, //YOUR EMAILJS TEMPLATE_ID
+        {
+          from_name: data.name,
+          from_email: data.email,
+          subject: data.subject,
+          message: data.message,
+        },
+        import.meta.env.VITE_PUBLIC_KEY //YOUR EMAILJS PUBLIC_KEY
+      );
 
-    const mailtoLink = `mailto:qaiserhabib6@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-    )}`;
-
-    window.location.href = mailtoLink;
-
-    alert(
-      "Thank you for your message! Your email client should now open with the pre-filled message."
-    );
-
-    reset();
+      alert("Message sent successfully!");
+      reset();
+    } catch (error) {
+      console.error("Email send error:", error);
+      alert("Something went wrong. Please try again later.");
+    }
   };
+
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6">
