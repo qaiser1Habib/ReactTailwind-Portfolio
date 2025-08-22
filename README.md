@@ -43,7 +43,7 @@ cd ReactTailwind-Portfolio
 # intall dependencies
 npm install
 
-Run the development server:
+# Run the development server:
 npm run dev.
 ```
 
