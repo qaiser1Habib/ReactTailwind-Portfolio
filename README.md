@@ -1,69 +1,56 @@
-# React + TypeScript + Vite
+## React + TypeScript + Tailwind Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a personal portfolio website built with **React, Tailwind CSS, and TypeScript**.  
+It showcases my background, skills, work experience, and featured projects as a MERN Stack Developer.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design** – Works smoothly across desktop, tablet, and mobile.
+- **Smooth Navigation** – Animated scrolling and a mobile-friendly menu.
+- **Interactive Sections** – Skills progress bars, project overlays, and hover effects.
+- **Contact Form** – Pre-filled email client integration for direct messaging.
+- **Modern UI** – Built with Tailwind CSS, Font Awesome icons, and custom animations.
 
-## Expanding the ESLint configuration
+## 📂 Sections
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Home** – Intro and call-to-action.  
+- **About Me** – Education and background.  
+- **Experience** – Work history including Focus IT Services, Single Solution, and SoftRobo.  
+- **Projects** – Featured projects:
+  - [Pic.Fan](https://pic.fan) – Full-stack social platform with real-time messaging.  
+  - [UndrRight](https://www.undrright.com) – AI-powered legal assistant web app.  
+  - [En Route AI](https://enroute2.com) – AI travel chatbot with OpenAI.  
+- **Skills** – Frontend, backend, and DevOps tools with progress indicators.  
+- **Contact** – Email, phone, LinkedIn, and form submission.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Frontend:** React, TypeScript, Tailwind CSS  
+- **Icons & Fonts:** Font Awesome, Google Fonts (Inter)  
+- **Build Tool:** Vite (or Create React App, depending on your setup)  
+- **Hosting:** Compatible with Vercel, Netlify, or GitHub Pages 
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📦 Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/portfolio.git
+cd ReactTailwind-Portfolio
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+# intall dependencies
+npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Run the development server:
+npm run dev.
 ```
+
+Then visit `http://localhost:5173`.
+
+## 📬 Contact
+
+- **Email:** [qaiserhabib6@gmail.com](mailto:qaiserhabib6@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/qaisar-habib-827075203](https://www.linkedin.com/in/qaisar-habib-827075203/)  
+- **WhatsApp:** [+92 302 2630092](https://wa.me/923022630092)  
