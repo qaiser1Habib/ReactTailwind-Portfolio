@@ -3,6 +3,7 @@ import { scrollToSection } from "@/utils/utils";
 import profile from "@/assets/images/profile.png";
 import type { Experience } from "@/types/Experience";
 import ImageLoader from "@/styles/loader/ImageLoader";
+import SocialLinks from "@/styles/Icons/SocialLinks";
 
 interface HeroSectionProps {
   totalExperience: Experience;
@@ -25,7 +26,9 @@ const HeroSection = ({ totalExperience }: HeroSectionProps) => {
             />
           </div>
         </div>
-        <h1 className="text-5xl md:text-7xl font-bold mb-4">QAISER HABIB</h1>
+        <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-4">
+          QAISER HABIB
+        </h1>
         <div className="text-xl md:text-2xl mb-6">MERN Stack Developer</div>
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
           MERN Stack Developer with{" "}
@@ -47,38 +50,7 @@ const HeroSection = ({ totalExperience }: HeroSectionProps) => {
             Get In Touch
           </button>
         </div>
-        <div className="mt-12 flex justify-center space-x-6">
-          <a
-            href="mailto:qaiserhabib6@gmail.com"
-            className="text-2xl hover:scale-110 transition-transform"
-          >
-            <i className="fas fa-envelope"></i>
-          </a>
-          <a
-            href="https://github.com/qaiser1Habib"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-2xl hover:scale-110 transition-transform"
-          >
-            <i className="fa-brands fa-github"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/qaisar-habib-827075203/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-2xl hover:scale-110 transition-transform"
-          >
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a
-            href="https://wa.me/923022630092"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-2xl hover:scale-110 transition-transform"
-          >
-            <i className="fas fa-phone"></i>
-          </a>
-        </div>
+        <SocialLinks className="mt-12" />
       </div>
     </section>
   );

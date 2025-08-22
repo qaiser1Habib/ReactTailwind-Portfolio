@@ -6,6 +6,8 @@ interface ImageLoaderProps {
   style?: CSSProperties;
   className?: string;
   alt?: string;
+
+  
 }
 
 const ImageLoader = ({ src, style, className, alt }: ImageLoaderProps) => {

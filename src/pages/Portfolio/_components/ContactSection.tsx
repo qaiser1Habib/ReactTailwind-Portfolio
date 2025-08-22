@@ -76,10 +76,10 @@ const ContactSection = () => {
 
               <div className="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                 <div className="flex-shrink-0 w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center">
-                  <i className="fas fa-phone"></i>
+                  <i className="fa-brands fa-whatsapp"></i>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Phone</h4>
+                  <h4 className="font-semibold text-gray-800">Whatsapp</h4>
                   <a
                     href="https://wa.me/923022630092"
                     className="text-green-600 hover:text-green-800 transition-colors"
@@ -89,7 +89,6 @@ const ContactSection = () => {
                 </div>
               </div>
 
-              {/* LinkedIn */}
               <div className="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                 <div className="flex-shrink-0 w-12 h-12 bg-blue-700 text-white rounded-full flex items-center justify-center">
                   <i className="fab fa-linkedin"></i>

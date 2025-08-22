@@ -1,3 +1,5 @@
+import SocialLinks from "@/styles/Icons/SocialLinks";
+
 const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
@@ -13,36 +15,7 @@ const Footer = () => {
             MERN Stack Developer passionate about creating amazing web
             experiences
           </p>
-          <div className="flex justify-center space-x-6 mb-8">
-            <a
-              href="mailto:qaiserhabib6@gmail.com"
-              className="text-2xl hover:text-blue-400 transition-colors"
-            >
-              <i className="fas fa-envelope" />
-            </a>
-            <a
-              href="https://github.com/qaiser1Habib"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl hover:scale-110 transition-transform"
-            >
-              <i className="fa-brands fa-github"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/qaisar-habib-827075203/"
-              target="_blank"
-              className="text-2xl hover:text-blue-400 transition-colors"
-            >
-              <i className="fab fa-linkedin" />
-            </a>
-            <a
-              href="https://wa.me/923022630092"
-              target="_blank"
-              className="text-2xl hover:text-blue-400 transition-colors"
-            >
-              <i className="fas fa-phone" />
-            </a>
-          </div>
+          <SocialLinks className="mb-8" />
           <div className="border-t border-gray-800 pt-8">
             <p className="text-gray-400">
               © {currentYear} Qaiser Habib. All rights reserved. Built with
