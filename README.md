@@ -35,7 +35,7 @@ It showcases my background, skills, work experience, and featured projects as a 
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/qaiser1Habib/ReactTailwind-Portfolio.git
 cd ReactTailwind-Portfolio
 ```
 
