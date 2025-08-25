@@ -1,6 +1,6 @@
 import Portfolio from "@/pages/Portfolio";
-import Header from "@/pages/partials/Header";
-import Footer from "@/pages/partials/Footer";
+import Header from "@/pages/Partials/Header";
+import Footer from "@/pages/Partials/Footer";
 
 function App() {
   return (
