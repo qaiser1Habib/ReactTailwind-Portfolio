@@ -23,7 +23,7 @@ const ImageLoader = ({ src, style, className, alt }: ImageLoaderProps) => {
       {isLoading && (
         <div
           className={clsx(
-            "absolute inset-0 animate-pulse bg-gray-200",
+            "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-pulse bg-gray-200",
             className
           )}
           style={style}
