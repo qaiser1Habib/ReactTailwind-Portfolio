@@ -195,6 +195,7 @@ const ContactSection = () => {
 
 							<button
 								type="submit"
+								disabled={isSubmitting}Ï
 								className="w-full gradient-bg text-white font-semibold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity flex items-center justify-center space-x-2 cursor-pointer"
 							>
 								{isSubmitting ? (
