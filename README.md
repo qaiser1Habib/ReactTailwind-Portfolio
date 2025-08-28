@@ -3,6 +3,8 @@
 This is a personal portfolio website built with **React, Tailwind CSS, and TypeScript**.  
 It showcases my background, skills, work experience, and featured projects as a MERN Stack Developer.
 
+<img width="1347" height="838" alt="Screenshot 2025-08-28 at 2 52 52 pm" src="https://github.com/user-attachments/assets/51f2e55f-4edb-431b-b62a-5e38bd3f0fc4" />
+
 ## 🚀 Features
 
 - **Responsive Design** – Works smoothly across desktop, tablet, and mobile.
