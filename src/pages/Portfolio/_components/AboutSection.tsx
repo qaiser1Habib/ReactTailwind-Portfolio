@@ -61,7 +61,7 @@ const AboutSection = ({ totalExperience }: AboutSectionProps) => {
 
 							<div className="text-center p-4 bg-gray-50 rounded-lg">
 								<div className="text-3xl font-bold text-purple-600">{repoCount > 0 ? `${repoCount}+` : "Loading..."}</div>
-								<div className="text-gray-600">GitHub Repositories</div>
+								<div className="text-gray-600">Projects</div>
 							</div>
 						</div>
 					</div>
